@@ -26,10 +26,10 @@ const ChairmanMessage = () => {
               A Vision Built on Trust
             </h2>
             <blockquote className="text-primary-foreground/80 text-lg leading-relaxed italic border-l-4 border-secondary pl-6">
-              "At Prasiddhi Constructions, we don't just build structures — we build communities, memories, and a legacy of trust. Every brick we lay carries the weight of our commitment to excellence and the dreams of families who choose us."
+              "At SVMS Constructions, we don't just build structures — we build communities, memories, and a legacy of trust. Every brick we lay carries the weight of our commitment to excellence and the dreams of families who choose us."
             </blockquote>
             <div>
-              <p className="text-secondary font-heading font-bold text-xl">Rajesh Kumar</p>
+              <p className="text-secondary font-heading font-bold text-xl">Adi Narayana</p>
               <p className="text-primary-foreground/60 text-sm">Chairman & Managing Director</p>
             </div>
           </div>

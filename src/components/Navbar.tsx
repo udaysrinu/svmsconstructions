@@ -17,9 +17,8 @@ const Navbar = () => {
       <div className="container mx-auto px-4 flex items-center justify-between h-16 md:h-20">
         <Link to="/" className="flex items-center gap-2">
           <span className="text-2xl md:text-3xl font-heading font-bold text-primary">
-            Pra<span className="text-secondary">siddhi</span>
+            SVMS<span className="text-secondary"> Constructions</span>
           </span>
-          <span className="hidden sm:block text-xs text-muted-foreground tracking-widest uppercase">Constructions</span>
         </Link>
 
         {/* Desktop Nav */}

@@ -215,7 +215,7 @@ const ProjectDetail = () => {
                 </Button>
               </form>
               <p className="text-xs text-muted-foreground text-center mt-3">
-                Or call: +91 90001 90001
+                Or call: +91 98480 11696
               </p>
             </div>
           </div>
