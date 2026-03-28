@@ -7,10 +7,10 @@ const Footer = () => {
         <div className="grid md:grid-cols-3 gap-10">
           <div>
             <h3 className="text-2xl font-heading font-bold mb-4">
-              Pra<span className="text-secondary">siddhi</span>
+              SVMS<span className="text-secondary"> Constructions</span>
             </h3>
             <p className="text-background/60 text-sm leading-relaxed">
-              Building premium residential communities across India since 2005. RERA registered and committed to on-time delivery.
+              Building premium residential communities in Visakhapatnam. RERA registered and committed to on-time delivery.
             </p>
             <div className="flex gap-3 mt-5">
               {[Facebook, Instagram, Linkedin, Youtube].map((Icon, i) => (
