@@ -38,11 +38,11 @@ const Footer = () => {
           <div>
             <h4 className="font-heading font-bold text-lg mb-4">Contact</h4>
             <address className="not-italic text-sm text-background/60 space-y-2">
-              <p>Prasiddhi Constructions Pvt. Ltd.</p>
-              <p>Plot 42, Financial District,</p>
-              <p>Gachibowli, Hyderabad – 500032</p>
-              <p className="pt-2">📞 +91 90001 90001</p>
-              <p>✉️ info@prasiddhi.com</p>
+              <p>SVMS Constructions</p>
+              <p>Shanti Nagar,</p>
+              <p>Visakhapatnam</p>
+              <p className="pt-2">📞 +91 98480 11696</p>
+              <p>✉️ info@svmsconstruction.com</p>
             </address>
             <a
               href="#"
