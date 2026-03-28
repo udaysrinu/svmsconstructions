@@ -7,7 +7,7 @@ const HeroSection = () => {
       <div className="absolute inset-0">
         <img
           src={heroImage}
-          alt="Premium residential project by Prasiddhi Constructions"
+          alt="Premium residential project by SVMS Constructions"
           className="w-full h-full object-cover"
           width={1920}
           height={1080}
