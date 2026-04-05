@@ -5,6 +5,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { projects } from "@/data/projects";
 import { toast } from "sonner";
+import { motion } from "framer-motion";
 
 const EnquiryForm = () => {
   const [form, setForm] = useState({ name: "", phone: "", email: "", project: "", message: "" });
@@ -20,9 +21,15 @@ const EnquiryForm = () => {
   };
 
   return (
-    <section id="enquiry" className="py-16 md:py-24 bg-primary">
+    <section id="enquiry" className="py-16 md:py-24 bg-primary overflow-hidden">
       <div className="container mx-auto px-4">
-        <div className="max-w-2xl mx-auto">
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-50px" }}
+          transition={{ duration: 0.7 }}
+          className="max-w-2xl mx-auto"
+        >
           <div className="text-center mb-10">
             <p className="text-secondary font-medium tracking-[0.2em] uppercase text-sm mb-2">
               Get In Touch
@@ -72,15 +79,17 @@ const EnquiryForm = () => {
               rows={4}
               className="bg-primary-foreground/10 border-primary-foreground/20 text-primary-foreground placeholder:text-primary-foreground/40"
             />
-            <Button
-              type="submit"
-              size="lg"
-              className="w-full bg-secondary text-secondary-foreground hover:bg-secondary/90 font-semibold text-base py-6"
-            >
-              Submit Enquiry
-            </Button>
+            <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
+              <Button
+                type="submit"
+                size="lg"
+                className="w-full bg-secondary text-secondary-foreground hover:bg-secondary/90 font-semibold text-base py-6"
+              >
+                Submit Enquiry
+              </Button>
+            </motion.div>
           </form>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
