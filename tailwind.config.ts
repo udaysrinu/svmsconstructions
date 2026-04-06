@@ -14,8 +14,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        heading: ['"Playfair Display"', 'serif'],
-        body: ['"Inter"', 'sans-serif'],
+        heading: ['"Cinzel"', 'serif'],
+        body: ['"Josefin Sans"', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -51,9 +51,13 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        navy: "hsl(var(--navy))",
-        gold: "hsl(var(--gold))",
-        "gold-light": "hsl(var(--gold-light))",
+        dark: "#0A0E1A",
+        cream: "#FAF8F3",
+        gold: {
+          DEFAULT: "#CA8A04",
+          shimmer: "#D4AF37",
+          light: "hsl(var(--gold-light))",
+        },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
@@ -87,12 +91,32 @@ export default {
           from: { opacity: "0", transform: "scale(0.5)" },
           to: { opacity: "1", transform: "scale(1)" },
         },
+        "float": {
+          "0%, 100%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(-6px)" },
+        },
+        "pulse-gold": {
+          "0%, 100%": { boxShadow: "0 0 0 0 rgba(202, 138, 4, 0.4)" },
+          "50%": { boxShadow: "0 0 0 10px rgba(202, 138, 4, 0)" },
+        },
+        "shimmer": {
+          "0%": { backgroundPosition: "-200% 0" },
+          "100%": { backgroundPosition: "200% 0" },
+        },
+        "draw-line": {
+          from: { strokeDashoffset: "1000" },
+          to: { strokeDashoffset: "0" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "fade-in-up": "fade-in-up 0.6s ease-out forwards",
         "count-up": "count-up 0.5s ease-out forwards",
+        "float": "float 3s ease-in-out infinite",
+        "pulse-gold": "pulse-gold 2s ease-in-out infinite",
+        "shimmer": "shimmer 2s linear infinite",
+        "draw-line": "draw-line 2s ease-out forwards",
       },
     },
   },
