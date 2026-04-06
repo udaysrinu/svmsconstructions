@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ChevronDown, Phone } from "lucide-react";
-import heroImage from "@/assets/hero-building.jpg";
+import heroImage from "@/assets/hero-construction.jpg";
 
 /** Word-by-word blur-to-sharp reveal */
 function WordReveal({
