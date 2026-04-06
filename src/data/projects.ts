@@ -1,8 +1,13 @@
-import projectExterior from "@/assets/project-modern-building.jpg";
-import projectInterior from "@/assets/project-interior-luxury.jpg";
-import projectUpcoming from "@/assets/skyline-vizag.jpg";
-import constructionSite from "@/assets/construction-site.jpg";
+// Original assets
+import origExterior from "@/assets/project-exterior.jpg";
+import origInterior from "@/assets/project-interior.jpg";
+import origProject3 from "@/assets/project-3.jpg";
 import heroBuilding from "@/assets/hero-building.jpg";
+// New assets
+import modernBuilding from "@/assets/project-modern-building.jpg";
+import luxuryInterior from "@/assets/project-interior-luxury.jpg";
+import skyline from "@/assets/skyline-vizag.jpg";
+import constructionSite from "@/assets/construction-site.jpg";
 import luxuryApt from "@/assets/project-luxury-apt.jpg";
 
 export interface Project {
@@ -37,8 +42,8 @@ export const projects: Project[] = [
     acres: 1.5,
     priceRange: "Contact for Price",
     status: "Ready to Move",
-    image: projectExterior,
-    gallery: [projectExterior, projectInterior, heroBuilding, constructionSite],
+    image: origExterior,
+    gallery: [origExterior, origInterior, heroBuilding, modernBuilding, constructionSite],
     reraNumber: "Contact for Details",
     amenities: ["24/7 Security", "Power Backup", "Landscaped Gardens", "Children's Play Area", "Lift Facility", "Covered Parking"],
     configs: [
@@ -57,8 +62,8 @@ export const projects: Project[] = [
     acres: 1,
     priceRange: "Contact for Price",
     status: "Ready to Move",
-    image: luxuryApt,
-    gallery: [luxuryApt, projectInterior, heroBuilding, constructionSite],
+    image: origProject3,
+    gallery: [origProject3, luxuryInterior, origInterior, luxuryApt, constructionSite],
     reraNumber: "Contact for Details",
     amenities: ["24/7 Security", "Power Backup", "Lift Facility", "Covered Parking", "Landscaped Gardens", "CCTV Surveillance"],
     configs: [
@@ -77,8 +82,8 @@ export const projects: Project[] = [
     acres: 0,
     priceRange: "Pre-Launch Pricing",
     status: "Upcoming",
-    image: projectUpcoming,
-    gallery: [projectUpcoming, projectExterior, projectInterior],
+    image: skyline,
+    gallery: [skyline, heroBuilding, modernBuilding, origExterior],
     reraNumber: "To Be Announced",
     amenities: ["Swimming Pool", "Gym", "Clubhouse", "Children's Play Area", "Landscaped Gardens", "24/7 Security", "Power Backup", "Lift Facility"],
     configs: [
