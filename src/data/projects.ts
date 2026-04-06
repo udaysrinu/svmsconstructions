@@ -1,6 +1,9 @@
-import projectInterior from "@/assets/project-interior.jpg";
-import projectExterior from "@/assets/project-exterior.jpg";
-import project3 from "@/assets/project-3.jpg";
+import projectExterior from "@/assets/project-modern-building.jpg";
+import projectInterior from "@/assets/project-interior-luxury.jpg";
+import projectUpcoming from "@/assets/skyline-vizag.jpg";
+import constructionSite from "@/assets/construction-site.jpg";
+import heroBuilding from "@/assets/hero-building.jpg";
+import luxuryApt from "@/assets/project-luxury-apt.jpg";
 
 export interface Project {
   id: string;
@@ -35,7 +38,7 @@ export const projects: Project[] = [
     priceRange: "Contact for Price",
     status: "Ready to Move",
     image: projectExterior,
-    gallery: [projectExterior, projectInterior, project3],
+    gallery: [projectExterior, projectInterior, heroBuilding, constructionSite],
     reraNumber: "Contact for Details",
     amenities: ["24/7 Security", "Power Backup", "Landscaped Gardens", "Children's Play Area", "Lift Facility", "Covered Parking"],
     configs: [
@@ -54,8 +57,8 @@ export const projects: Project[] = [
     acres: 1,
     priceRange: "Contact for Price",
     status: "Ready to Move",
-    image: projectInterior,
-    gallery: [projectInterior, projectExterior, project3],
+    image: luxuryApt,
+    gallery: [luxuryApt, projectInterior, heroBuilding, constructionSite],
     reraNumber: "Contact for Details",
     amenities: ["24/7 Security", "Power Backup", "Lift Facility", "Covered Parking", "Landscaped Gardens", "CCTV Surveillance"],
     configs: [
@@ -74,8 +77,8 @@ export const projects: Project[] = [
     acres: 0,
     priceRange: "Pre-Launch Pricing",
     status: "Upcoming",
-    image: project3,
-    gallery: [project3, projectExterior, projectInterior],
+    image: projectUpcoming,
+    gallery: [projectUpcoming, projectExterior, projectInterior],
     reraNumber: "To Be Announced",
     amenities: ["Swimming Pool", "Gym", "Clubhouse", "Children's Play Area", "Landscaped Gardens", "24/7 Security", "Power Backup", "Lift Facility"],
     configs: [

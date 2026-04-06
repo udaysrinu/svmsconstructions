@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ChevronDown, Phone } from "lucide-react";
-import heroImage from "@/assets/hero-building.jpg";
+import heroImage from "@/assets/hero-construction.jpg";
 
 /** Word-by-word blur-to-sharp reveal */
 function WordReveal({
@@ -134,7 +134,7 @@ const HeroSection = () => {
                 <Button
                   size="lg"
                   variant="outline"
-                  className="border border-cream/30 text-cream hover:bg-cream/10 rounded-full px-8 py-6 text-base font-body font-semibold transition-transform hover:scale-105 cursor-pointer gap-2"
+                  className="border-2 border-white text-white hover:bg-white hover:text-dark rounded-full px-8 py-6 text-base font-body font-semibold transition-all hover:scale-105 cursor-pointer gap-2"
                 >
                   <Phone size={18} />
                   Call Now
