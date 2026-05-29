@@ -2,6 +2,8 @@
 
 > Marketing website for SVMS Constructions — a construction company. Single-page site with a project portfolio, chairman's note, awards, testimonials, and an enquiry form.
 
+Access : https://svms-constructions.vercel.app/ 
+
 ## What it does
 
 A premium-feel marketing site for a construction firm: hero with word-by-word blur-to-sharp reveal, animated stats bar, featured-projects grid that links into per-project detail pages (`/project/:id`), a timeline, "why us" section, chairman's message, awards, testimonials, an enquiry form (front-end validation, no backend wired), a sticky WhatsApp CTA button, and a footer.
